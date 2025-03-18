@@ -1,0 +1,100 @@
+/* Joshua O. Pagcaliwagan CMSC 100 C-1L Exer 7 Front End Scripting */
+/* font of all elements */
+* {
+  font-family: Arial, sans-serif;
+}
+
+/* for body, use flexbox, column, center, pink padding */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: pink;
+  padding: 20px;
+}
+
+/* for title, font size, margin, pink */
+#title {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: hotpink;
+}
+
+/* for form, use flexbox, column, center, gap for space, width */
+#foodForm { /* Updated ID */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 350px;
+}
+
+/* for form input, width, padding, font size, border color, bg color, font color */
+#foodForm input { 
+  width: 350px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid deeppink;
+  background-color: mistyrose;
+  color: darkred;
+}
+
+/* for submit button, width, padding, fontsize, bg color, font color, border*/
+#foodForm button { 
+  width: 350px;
+  padding: 8px;
+  font-size: 14px;
+  background-color: hotpink;
+  color: white;
+  border: 1px solid deeppink;
+  
+}
+
+ /* submit button changes color when mouse hovers over it */
+#foodForm button:hover {
+  background-color: deeppink;
+}
+
+/* for food container, use flexbox, wrap, center, gap for space, width, margin */
+#foodCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  width: 750px;
+  margin-top: 15px;
+}
+
+/* for food card, width, bg color, padding, text center, border */
+.foodCard {
+  width: 170px;
+  background-color: mistyrose;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid hotpink;
+}
+
+/* for food image, width, height, fit cover, bg color pink */
+.foodCard img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  background-color: lightpink;
+}
+
+/* for header (food name), margin, font size, text color */
+.foodCard h3 {
+  margin-top: 8px;
+  font-size: 16px;
+  color: deeppink;
+}
+
+/* for food description, font size, text color */
+.foodCard p {
+  font-size: 12px;
+  color: darkred;
+}
+
+/* References:
+https://www.w3schools.com/cssref/index.php
+*/
